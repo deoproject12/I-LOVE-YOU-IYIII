@@ -1,4 +1,15 @@
 {
-    "rewrites": [{ "source": "/", "destination": "/index.html" }]
-  }
-  
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/card", "dest": "/card.html" },
+    { "src": "/script.js", "dest": "/script.js" },
+    { "src": "/style.css", "dest": "/style.css" },
+    { "src": "/card.js", "dest": "/card.js" },
+    { "src": "/card.css", "dest": "/card.css" },
+    { "src": "/gambar/(.*)", "dest": "/gambar/$1" },
+    { "src": "/video/(.*)", "dest": "/video/$1" }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
